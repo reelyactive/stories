@@ -1,9 +1,80 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title> reelyActive Stories: people, products and places </title>
+    <title> reelyActive Structured Data Stories Archive </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reelyactive.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="stories.js"></script>
   </head>
-  <body>
+  <body ng-app="stories">
+    <div ng-controller="StoriesCtrl">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://www.reelyactive.com">
+            <strong>reely</strong>Active
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid">
+
+        <!----- Places ----->
+        <h1> Places </h1>
+        <hr>
+        <div class="row">
+          <div ng-repeat="place in places">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <img ng-src="{{place.path + place.img}}"
+                   class="img-responsive img-circle center-block">
+              <p class="text-center">
+                <a class="btn btn-default btn-xs"
+                   ng-href="{{place.path}}"> {{baseUrl + place.path}} </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!----- Products ----->
+        <h1> Products </h1>
+        <hr>
+        <div class="row">
+          <div ng-repeat="product in products">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <img ng-src="{{product.path + product.img}}"
+                   class="img-responsive img-circle center-block">
+              <p class="text-center">
+                <a class="btn btn-default btn-xs"
+                   ng-href="{{product.path}}"> {{baseUrl + product.path}} </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!----- People ----->
+        <h1> People </h1>
+        <hr>
+        <div class="row">
+          <div ng-repeat="person in people">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <img ng-src="{{person.path + person.img}}"
+                   class="img-responsive img-circle center-block">
+              <p class="text-center">
+                <a class="btn btn-default btn-xs"
+                   ng-href="{{person.path}}"> {{baseUrl + person.path}} </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <footer class="footer">
+        <a href="https://www.reelyactive.com/stories/"> Stories </a>
+        &nbsp; | &nbsp;
+        <a href="https://www.reelyactive.com">
+          &copy; reelyActive 2017-2018
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
