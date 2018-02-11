@@ -36,6 +36,18 @@ PRODUCTS = [
 ];
 
 PEOPLE = [
+  { path: "barnowls/barnardine/", img: "320x320.jpg" },
+  { path: "barnowls/barney/", img: "320x320.jpg" },
+  { path: "barnowls/barnice/", img: "320x320.jpg" },
+  { path: "barnowls/barntholomew/", img: "320x320.jpg" },
+  { path: "barnowls/mcowla/", img: "320x320.jpg" },
+  { path: "barnowls/owlain/", img: "320x320.jpg" },
+  { path: "barnowls/owlison/", img: "320x320.jpg" },
+  { path: "barnowls/owlistair/", img: "320x320.jpg" },
+  { path: "barnowls/owlivia/", img: "320x320.jpg" },
+  { path: "barnowls/powlette/", img: "320x320.jpg" },
+  { path: "barnowls/rowlf/", img: "320x320.jpg" },
+  { path: "barnowls/sunny/", img: "320x320.jpg" },
   { path: "mascots/barnowl/", img: "320x320.png" },
   { path: "mascots/barnacles/", img: "320x320.png" },
   { path: "mascots/barterer/", img: "320x320.png" },
