@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title> Owl-in-One #3 </title>
+    <script type="application/ld+json">
+    {
+      "@context": {
+         "schema": "http://schema.org/"
+      },
+      "@graph": [
+        {
+          "@id": "product",
+          "@type": "schema:Product",
+          "schema:name": "Owl-in-One #3",
+          "schema:manufacturer": {
+            "@type": "schema:Organization",
+            "schema:name": "reelyActive",
+            "schema:url": "https://www.reelyactive.com"
+          },
+          "schema:model": "RA-H443",
+          "schema:url": "https://www.reelyactive.com/stories/showcase/oio/3/",
+          "schema:image": "https://www.reelyactive.com/stories/showcase/oio/3/960x960.jpg"
+        }
+      ]
+    }
+    </script>
+    <style>
+      body { margin: 0; }
+      div {
+        width: 100%;
+        height: 100%;
+        background: url(960x960.jpg) no-repeat center center fixed;
+        background-size:center;
+      }
+      h1 { padding: 12px; color: #5a5a5a; text-shadow: 0px 0px 4px #fff; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1> Owl-in-One #3 <br>
+           <small> JSON-LD and Schema.org inside... </small> </h1>
+    </div>
+  </body>
+</html>
